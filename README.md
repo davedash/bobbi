@@ -2,7 +2,11 @@
 
 An agent that sits in a server that takes orders from the outside and executes them.
 
-At least that'll be our intent.
+The idea is you might be running ChatOps via Hubot or something, and inevitably you'll want to run some crazy commands on some other host.  E.g. you might want to reboot a host from hubot.
+
+You could have hubot SSH to the machine and run the right commands, but that involves creating an account for Hubot, and setting up SSH keys.
+
+My proposal is to have Bobbi running on any server you'd like.  You can make HTTP requests from your Hubot scripts to Bobbi.  Bobbi will happily run them on the server it's on.  This can all be locked down via Security Groups.  
 
 Note, I've undoubtedly made some mistakes or silly assumptions.  Feel free to give me feedback.
 
