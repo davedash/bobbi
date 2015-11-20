@@ -9,15 +9,18 @@ import (
 	"net/http"
 )
 
-var configFile = flag.String("config", "/etc/bobbi.conf", "INI file for bobbi")
+var configFile = flag.String("config", "/etc/bobbi/bobbi.conf", "INI file for bobbi")
 
 func handler(w http.ResponseWriter, r *http.Request) {
+
 	fmt.Fprintf(w, "Welcome, %s!", r.URL.Path[1:])
 }
 
 type config struct {
 	Main struct {
 		Port string
+	}
+	Routes struct {
 	}
 }
 
