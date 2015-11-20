@@ -10,6 +10,11 @@ My proposal is to have Bobbi running on any server you'd like.  You can make HTT
 
 Note, I've undoubtedly made some mistakes or silly assumptions.  Feel free to give me feedback.
 
+## Contributions Welcome
+
+I built this tool to help serve a very narrow purpose: Kicking off tasks in on
+remote servers via Hubot without dealing with SSH.  
+
 ## TODO
 
 - Bobbi will be an HTTP server.  If you'd rather use HTTPS, you can front it with `nginx`.  If you want authentication, also look at `nginx`.
